@@ -49,6 +49,32 @@ body {
   margin-bottom: 9px;
 }
 
+.client1-2 {
+  padding: 17.71px 32px 14.25px;
+  display: inline-block;
+}
+
+.client3-6 {
+  padding: 16px 32px;
+  display: inline-block;
+}
+
+.client1-2:hover,
+.client3-6:hover {
+  border-color: var(--hover-color);
+  fill: var(--hover-color);
+  cursor: pointer;
+}
+
+.client1-2:focus,
+.client3-6:focus {
+  border-color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+.clients-list {
+  justify-content: space-between;
+}
 .contact-links-footer {
   font-size: 14px;
   line-height: 1.71;
@@ -341,6 +367,12 @@ ul.list.lorem-list li p {
   line-height: 1.71;
   color: #757575;
   letter-spacing: 0.03em;
+}
+
+ul.clients-list li svg {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
 }
 
 .webstudio {
