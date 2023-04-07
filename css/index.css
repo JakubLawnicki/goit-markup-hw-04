@@ -115,6 +115,12 @@ div.container.section.activity ul {
   flex-wrap: wrap;
 }
 
+div.social-media ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .filter {
   display: flex;
   margin: 0 auto;
@@ -225,7 +231,6 @@ img {
   line-height: 1.2;
   color: #757575;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .link-header {
@@ -239,10 +244,6 @@ img {
 .list {
   list-style-type: none;
   display: flex;
-}
-
-ul.list li a:hover {
-  color: var(--hover-color);
 }
 
 .list li a:focus {
@@ -289,6 +290,17 @@ ul.list li a:hover {
 .logo-studio-head {
   color: #000000;
 }
+
+.lorem-icons {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lorem-list {
   column-gap: 30px;
 }
@@ -350,6 +362,28 @@ ul.list li a:hover {
   align-items: normal;
 }
 
+.social-container {
+  padding: 12px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.social-container:hover {
+  background-color: var(--hover-color);
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.social-icon {
+  display: block;
+}
+
+.social-media {
+  width: 206px;
+  height: 56px;
+  margin: 16px auto 18px;
+}
+
 .tertiary-heading {
   font-weight: 700;
   font-size: 14px;
@@ -359,6 +393,10 @@ ul.list li a:hover {
 
 .top-padding-none {
   padding-top: 0;
+}
+
+ul.list li a:hover {
+  color: var(--hover-color);
 }
 
 ul.list.lorem-list li p {
