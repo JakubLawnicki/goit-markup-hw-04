@@ -60,15 +60,11 @@ body {
   align-items: center;
 }
 
-.clients:hover {
-  border-color: var(--hover-color);
-  fill: var(--hover-color);
-  cursor: pointer;
-}
-
+.clients:hover,
 .clients:focus {
   border-color: var(--hover-color);
   fill: var(--hover-color);
+  cursor: pointer;
 }
 
 .clients-list {
@@ -87,11 +83,8 @@ body {
   justify-content: space-between;
 }
 
+.contact-links-header:hover,
 .contact-links-header:focus {
-  color: var(--hover-color);
-}
-
-.contact-links-header:hover {
   color: var(--hover-color);
 }
 
@@ -212,12 +205,16 @@ div.social-media-foot ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 600px;
 }
 
 .hero-background {
   max-width: 1600px;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-button {
@@ -235,7 +232,6 @@ div.social-media-foot ul {
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-bottom: 200px;
 }
 
 img {
@@ -268,7 +264,8 @@ img {
   align-items: center;
 }
 
-.link-header:hover svg use {
+.link-header:hover svg use,
+.link-header:focus svg use {
   fill: var(--hover-color);
 }
 
@@ -294,11 +291,8 @@ img {
   color: var(--hover-color);
 }
 
+.list.navigation li a:hover,
 .list.navigation li a:focus {
-  color: var(--hover-color);
-}
-
-.list.navigation li a:hover {
   color: var(--hover-color);
 }
 
@@ -347,7 +341,7 @@ img {
   font-size: 44px;
   line-height: 1.36;
   color: #ffffff;
-  margin: 200px 0 30px 0;
+  margin-bottom: 30px;
   text-align: center;
   max-width: 696px;
   letter-spacing: 0.06em;
@@ -378,7 +372,8 @@ img {
   border-right: 1px solid #eeeeee;
 }
 
-.projects-card:hover {
+.projects-card:hover,
+.projects-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
@@ -414,6 +409,7 @@ img {
   padding: 12px;
   border-radius: 50%;
   fill: #afb1b8;
+  display: block;
 }
 
 .social-container-foot {
@@ -421,14 +417,17 @@ img {
   border-radius: 50%;
   fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
+  display: block;
 }
 
-.social-container-foot:hover {
+.social-container-foot:hover,
+.social-container-foot:focus {
   background-color: var(--hover-color);
   cursor: pointer;
 }
 
-.social-container:hover {
+.social-container:hover,
+.social-container:focus {
   background-color: var(--hover-color);
   fill: #fff;
   cursor: pointer;
